@@ -7,6 +7,6 @@ imblearn==0.0
 xgboost==1.4.0
 scikit-learn==0.24.1
 scipy==1.6.2
-streamlit_wordcloud
+streamlit_wordcloud==0.1.0
 nltk
 PySastrawi
