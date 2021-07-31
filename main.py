@@ -165,10 +165,10 @@ elif menu_selectbox == 'Emotion Analysis by Text':
     if st.button('Analyze Text Emotion'):
 
         # load model
-        joblib_XGB_model = joblib.load('joblib_XGB_Model.pkl')
-        joblib_SVM_model = joblib.load('joblib_SVM_Model.pkl')
-        joblib_LR_model = joblib.load('joblib_LR_Model.pkl')
-        joblib_SGD_model = joblib.load('joblib_SGD_Model.pkl')
+        joblib_XGB_model = joblib.load('model/joblib_XGB_Model.pkl')
+        joblib_SVM_model = joblib.load('model/joblib_SVM_Model.pkl')
+        joblib_LR_model = joblib.load('model/joblib_LR_Model.pkl')
+        joblib_SGD_model = joblib.load('model/joblib_SGD_Model.pkl')
         
         st.write(f'Text before preprocessing: {text}')
 
@@ -221,10 +221,10 @@ else:
         del upload_file
 
         # load model
-        joblib_XGB_model = joblib.load('joblib_XGB_Model.pkl')
-        joblib_SVM_model = joblib.load('joblib_SVM_Model.pkl')
-        joblib_LR_model = joblib.load('joblib_LR_Model.pkl')
-        joblib_SGD_model = joblib.load('joblib_SGD_Model.pkl')
+        joblib_XGB_model = joblib.load('model/joblib_XGB_Model.pkl')
+        joblib_SVM_model = joblib.load('model/joblib_SVM_Model.pkl')
+        joblib_LR_model = joblib.load('model/joblib_LR_Model.pkl')
+        joblib_SGD_model = joblib.load('model/joblib_SGD_Model.pkl')
 
         st.subheader("Initial Data")
         st.write(upload_data)
